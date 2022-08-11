@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<input type="text" id="nhap1">
+<button id="btn" onclick="clickon()">ấn</button>
+<p id="hienthi">Hiển thị kết quả</p>
+</body>
+<script>
+    // let a = +prompt("nhập số a: ")
+    // let b = +prompt("nhập số b: ")
+    // for (;a<=b;a++){
+    //     document.write(a)
+    // }
+    let text =""
+    function clickon() {
+        let a = +document.getElementById("nhap").value
+        let b = +document.getElementById("nhap1").value
+        for (let i = a; i <= b; i++) {
+            text += i+"<br>"
+        } document.getElementById("hienthi").innerHTML=text
+        console.log(text)
+    }
+</script>
+</html>

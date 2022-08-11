@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button id="btn" onclick="clickon()">ấn</button>
+<p id="hienthi">Hiển thị kết quả</p>
+</body>
+<script>
+    // let so = +prompt("nhập số n")
+    // for( let i=1;i<=so;i++){
+    //     document.write(i)
+    //     console.log(i)
+    // }
+    let text =""
+    function clickon(){
+        let n = document.getElementById("nhap").value
+        for (let i=1;i<=n;i++){
+            text += i+"<br>";
+        }
+        document.getElementById("hienthi").innerHTML=text
+        console.log(text)
+    }
+</script>
+</html>
